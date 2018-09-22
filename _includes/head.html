@@ -1,0 +1,9 @@
+<head>
+    <title>{% if page.title %} {{ page.title }} | {{ site.name }} {% else %} {{ site.name }} {% endif %}</title>
+
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+</head>
