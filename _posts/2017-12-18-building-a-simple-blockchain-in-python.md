@@ -5,7 +5,7 @@ keywords: Python, Blockchain, Cryptocurrency, Bitcoin, Ethereum, Virtualcurrency
 excerpt: A Blockchain is a digital ledger in which transactions are recorded chronologically and publicly.
 ---
 
-![](/images/post/blockchain1.jpg)
+<img src="{{site.static_url}}/img/post/blockchain1.jpg" alt="blockchain part 1" style="width:80%;height:60%"/>
 
 Since Bitcoin boom, Everybody is losing their mind, and as a result of that, we have another Cool Kid in the town, **BLOCKCHAIN**.
 
@@ -228,7 +228,7 @@ That's all for this post. I hope you learned something.
 
 Thank you for reading this :)
 
-You can find the complete source code [here](https://github.com/gjain0/blockchain-python/blob/master/blockchain.py).
+[You can find the complete source code here](https://github.com/gjain0/blockchain-python/blob/master/blockchain.py).
 
 I kept it very simple just for educational purpose. If you have any suggestions or questions or found any errors/bugs, let me know in the comments.
 

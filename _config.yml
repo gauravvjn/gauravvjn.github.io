@@ -1,35 +1,31 @@
 # Site
-name: PyScoop
-description: 
+title: PyScoop
+description: Another Python Blog
 baseurl: ""
 url:
+
+canonical_base_url: https://www.pyscoop.com
 
 
 # Jekyll
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-  syntax_highlighter: rouge
 
 
 sass:
   sass_dir: _sass
   style: compressed
 
+static_dir: assets
+static_url: /assets
 
 paginate: 5
 paginate_path: 'page:num/'
 
 
-# Gems
-gems:
+# Gems/plugins
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
@@ -51,10 +47,43 @@ social:
     twitter:
     instagram:
     linkedin: https://www.linkedin.com/in/gjain0
-    github:
+    github: http://github.com/gjain0
+    sof:
+
+# DSA
+dsa_enable: true
+
+dsa_taxonomy:
+  # Linked List:
+  #   - Singly Linked List
+  #   - Circular Linked List
+  #   - Doubly Linked List
+  #   - Doubly Circular Linked List
+  Sorting:
+    - Bubble Sort
+    - Insertion Sort
+    - Selection sort
+    - Merge Sort
+    - Quick Sort
+    - Heap Sort
+  Searching:
+    - Linear Search
+    - Binary Search
+  Stack:
+  # Queue:
+  #   - Queue
+  #   - Double Ended queue (Deque)
+  #   - Priority Queue
+  # Tree & Heap:
+  #   - Binary Tree
+  #   - Binary Search Tree (BST)
+  #   - AVL Tree
+  #   - Heap
+  # Graph:
+
 
 # External
-google_analytics:
+google_analytics: UA-110940448-1
 
 firebase:
   apiKey: 

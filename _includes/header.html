@@ -1,14 +1,43 @@
 <header class="header">
-  <div class="container">
+  <div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="{{ site.baseurl }}/">PyScoop</a>
+        <a class="navbar-brand" title="PyScoop Home" href="{{ site.baseurl }}/">PyScoop</a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}/about">About Me</a>
+                  <a class="nav-link" title="Python Blog" href="{{ site.baseurl }}/">Blog</a>
+                </li>
+                {% if site.dsa_enable %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" title="Data Structures and Algorithms" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Data Structures and Algorithms
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% for dsa_title in site.dsa_taxonomy %}
+                      {% if dsa_title[1].size > 0 %}
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" title="{{ dsa_title[0] | slugify }} in Python" href="/{{ dsa_title[0] | slugify }}-in-python/">{{ dsa_title[0] }}</a>
+                            <ul class="dropdown-menu">
+                              {% for sub_dsa_title in dsa_title[1] %}
+                                  <li class="dropdown-submenu">
+                                    <a class="dropdown-item" title="{{ sub_dsa_title | slugify }} in Python" href="/{{ sub_dsa_title | slugify }}-in-python/">
+                                      {{ sub_dsa_title }}
+                                    </a>
+                                  </li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                      {% else %}
+                          <li>
+                            <a class="dropdown-item" title="{{ dsa_title[0] | slugify }} in Python" href="/{{ dsa_title[0] | slugify }}-in-python/">{{ dsa_title[0] }}</a>
+                          </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link" title="About the author" href="{{ site.baseurl }}/about">About Me</a>
                 </li>
             </ul>
         </div>

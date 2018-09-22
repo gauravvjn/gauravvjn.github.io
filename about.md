@@ -4,4 +4,20 @@ title: About
 permalink: /about/
 ---
 
-A Software Engineer From India, Currently Working in Dubai(UAE), having 4+ years of Startup experience in Backend Development using Python, Django(DRF).
+A Software Engineer From India, currently reside in Dubai(UAE).
+
+Speciality: Python/Django
+
+<div>
+    <a target="_blank" title="Presence on Facebook" href="{{ site.social.author.facebook }}" style="font-size:40px;">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+
+   <a target="_blank" title="Presence on Linkedin" href="{{ site.social.author.linkedin }}" style="font-size:40px;">
+        <i class="fa fa-linkedin-square"></i>
+    </a>
+
+   <a target="_blank" title="Presence on Github" href="{{ site.social.author.github }}" style="font-size:40px;">
+        <i class="fa fa-github"></i>
+    </a>
+</div>

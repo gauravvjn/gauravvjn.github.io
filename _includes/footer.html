@@ -1,11 +1,10 @@
 <footer class="footer">
-    <div class="container">
+    <div>
         <nav class="social">
-            {% if site.pyscoop.facebook %}
-                <a class="" target="_blank" href="{{ site.pyscoop.facebook }}">FB</a>
+            {% if site.social.pyscoop.facebook %}
+                <a target="_blank" title="PyScoop's Facebook page" rel="noopener noreferrer" href="{{ site.social.pyscoop.facebook }}" style="font-size:40px;"><i class="fa fa-facebook-square"></i></a>
             {% endif %}
         </nav>
-        <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | escape }}. All rights reserved.</span>
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</span>
     </div>
 </footer>
-{% include analytics.html %}

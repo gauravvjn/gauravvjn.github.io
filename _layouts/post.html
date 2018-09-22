@@ -1,15 +1,21 @@
 ---
-layout: default
+layout: core
 ---
 
 <article class="post">
+
   <h1>{{ page.title }}</h1>
-  <div>
+
+  <div style="color:grey">
     By Gaurav Jain on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  </div><br>
 
   <div class="entry">
     {{ content }}
   </div>
 
 </article>
+
+<div class="container">
+    {% include disqus.html %}
+</div>

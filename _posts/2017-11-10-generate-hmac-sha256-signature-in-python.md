@@ -4,7 +4,7 @@ title: Generate HMAC SHA256 signature in Python
 keywords: SHA256, HMAC, Hash, Encoding, Python
 excerpt: SHA256 encoded strings are one of the way to encrypt and secure data.
 ---
-![](/images/post/sha256.png)
+<img src="{{site.static_url}}/img/post/sha256.png" alt="SHA256" style="width:80%;height:60%"/>
 
 SHA256 encoded strings can be used to secure payment gateway.  
 
@@ -26,4 +26,4 @@ def create_sha256_signature(key, message):
 create_sha256_signature("E49756B4C8FAB4E48222A3E7F3B97CC3", "TEST STRING")
 ```
 
-Also, hosted on Github: [GIST](https://gist.github.com/gjain0/172a4a9933626bd507e00ae6245e33a1)
+Also, hosted on Github: [Gaurav Jain's GIST](https://gist.github.com/gjain0/172a4a9933626bd507e00ae6245e33a1)

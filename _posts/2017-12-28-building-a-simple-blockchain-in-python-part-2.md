@@ -5,9 +5,9 @@ keywords: Bitcoin, Blockchain, Cryptocurrency, Encoding, Ethereum, Hash, Virtual
 excerpt: 2nd part of the previous post on building a simple Blockchain in python
 ---
 
-#### _Note: This is the 2nd part of my [previous post](/building-a-simple-blockchain-in-python/)._
+#### _Note: This is [the 2nd part of my previous post](/building-a-simple-blockchain-in-python/)._
 
-![](/images/post/blockchain2.jpg)
+<img src="{{site.static_url}}/img/post/blockchain2.png" alt="blockchain part 2" style="width:80%;height:60%"/>
 
 _image source: businessinsider.com_
 
@@ -341,9 +341,7 @@ You can add as many as nodes you want.
 
 Let's start another node in a new tab -
 
-![](/media/uploads/blog/.thumbnails/screen_shot_2018-01-07_at_1.17.01_pm.png/screen_shot_2018-01-07_at_1.17.01_pm-963x181.png)
-
-In above image, you can see I'm using **app.py**, but If you are following this post line by line you should have a blockchain.py file.  
+If you are following this post line by line you should have a blockchain.py file.  
 **$ python blockchain.py -p 5000**
 
 Cool, Now we have two nodes/servers running on the same machine.

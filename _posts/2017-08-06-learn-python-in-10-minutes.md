@@ -5,7 +5,7 @@ keywords: Python, Programming, Beginner
 excerpt: This a very basic tutorial for beginners who wants to learn Python. You will learn about types, variables, functions, etc.
 ---
 
-![](/images/post/python.png)  
+<img src="{{site.static_url}}/img/post/python.png" alt="python" style="width:80%;height:60%"/>
 ## Abstract
 
 We have plenty of online resources to learn Python language. Here, in this post, I am also trying to make a dent in the Python world.
@@ -16,7 +16,7 @@ Initially, most of the people get confused between Python2 and Python3 So lets c
 
 Development of Python has been stopped. Python 2.7 is the last version of the Python2 series.
 
-[Here](https://hg.python.org/peps/rev/76d43e52d978#l1.8) is the commit from the creator of Python, Guido van Rossum.
+[Here is the commit](https://hg.python.org/peps/rev/76d43e52d978#l1.8) from the creator of Python, Guido van Rossum.
 
 > +Update  
 > +======  
@@ -65,7 +65,7 @@ c = a + b   # c = 5.5
 c = a * b   # c = 7.5  
 c = a / b   # c = 1.2
 ```
-You can read more about these [here](https://docs.python.org/3/library/decimal.html#decimal-objects)
+[You can read more about these here](https://docs.python.org/3/library/decimal.html#decimal-objects)
 
 #### 2) Strings
 ```py

@@ -1,0 +1,28 @@
+---
+layout: core
+---
+
+<article class="post">
+
+  <h1>{{ page.title }}</h1>
+
+  <div style="color:grey">
+    By Gaurav Jain on {{ page.date | date: "%B %e, %Y" }}
+  </div><br>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <p>
+    These implementations can be found on <a href="{{ page.code_url }}" title="Data structure and Algorithm in Python on Github" target="_blank" rel="noopener noreferrer"><i>github [Python-DSA]</i></a> repository.
+  </p>
+  <p>
+    <i>If you find anything wrong or has a better solution, please feel free to create issues on this repo.</i>
+  </p>
+
+</article>
+
+<div class="container">
+    {% include disqus.html %}
+</div>
