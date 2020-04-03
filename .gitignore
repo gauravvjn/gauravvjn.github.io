@@ -7,5 +7,5 @@
 .bundle
 .sass-cache
 _site
-Gemfile*
+.idea/
 TODO
