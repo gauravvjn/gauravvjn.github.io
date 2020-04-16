@@ -1,0 +1,59 @@
+---
+---
+
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+}
+
+blockquote {
+  border-left: 1px ridge grey;
+  padding: 1em;
+  color: grey;
+  font-style: italic;
+}
+
+.post {
+  padding-bottom: 2em;
+  width: 104%;
+}
+
+.container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+@import "highlight_vim";
+
+
+#disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}

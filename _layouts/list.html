@@ -1,0 +1,25 @@
+---
+layout: core
+---
+
+<div style="color:gray;margin-bottom:35px;">
+  <h1>{{ page.heading }}</h1>
+</div>
+
+<div class="posts">
+    {% for post in site.posts %}
+      {% assign path = post.path | slice: 0, 5 %}
+      {% if path == "_post" %}
+        <article class="post">
+
+          <h2><a href="{{ site.baseurl }}{{ post.url }}" title="PyScoop's recent posts" target="_blank">{{ post.title }}</a></h2>
+
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more" target="_blank">Read More</a>
+        </article>
+      {% endif %}
+    {% endfor %}
+</div>
