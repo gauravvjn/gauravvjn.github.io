@@ -1,25 +1,25 @@
-### [PyScoop](http://www.pyscoop.com)
+### [Gaurav Jain](http://www.gauravvjn.com)
 
-### Setting up jekyll for local development and debug
+#### Install Pelican
 
-#### Create **Gemfile**
-```Gemfile
-source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
 ```
-#### Install jekyll
-```sh
-brew upgrade ruby
-export PATH=/usr/local/bin:$PATH
-ruby --version
-sudo gem update --system
-
-sudo gem install bundler 
-OR try below command
-# sudo gem install -n /usr/local/bin bundler
-# sudo gem install -n /usr/local/bin nokogiri
-
-bundle install
-
-bundle exec jekyll serve
+pip install -r requirements.txt
 ```
+
+Create .md files in content/ folder
+
+#### Generate Site
+From the project root directory, run the pelican command to generate your site:
+
+```
+pelican content
+```
+
+#### Preview site
+Open a new terminal session, navigate to your project root directory, and 
+run the following command to launch Pelican's web server:
+```
+pelican --listen
+```
+
+Preview your site by navigating to http://localhost:8000/ in your browser.

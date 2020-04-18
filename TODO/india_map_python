@@ -1,0 +1,17 @@
+"""
+Here is a small piece of code which is a translation of a popular obfuscated code written in C language. 
+This generate a map of India using exclamation marks(!) and spaces.
+"""
+
+STRING = "TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^NBELPeHBFHT}TnALVlBLOFAkHFOuFETpHCStHAUFAgcEAelclcn^r^r\\tZvYxXyT|S~Pn SPm SOn TNn ULo0ULo#ULo-WHq!WFs XDt!"
+b = 1
+for i, a in enumerate(STRING):
+    asc = ord(a)
+    while asc > 64:
+        if b == 80:
+            b = 0
+            print()
+        else:
+            print("!" if i % 2 else " ", end='')
+        b += 1
+        asc -= 1

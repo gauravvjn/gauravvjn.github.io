@@ -8,4 +8,5 @@
 .sass-cache
 _site
 .idea/
-TODO
+output/
+docs/

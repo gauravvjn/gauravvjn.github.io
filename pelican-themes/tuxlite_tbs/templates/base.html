@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="{{ SITEURL }}/theme/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
+
+    <!-- Le styles -->
+    <link href="{{ SITEURL }}/theme/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+    {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" rel="alternate" title="{{ SITENAME }}" type="application/atom+xml">
+    {% endif %}
+    {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate" title="{{ SITENAME }}" type="application/atom+xml">
+    {% endif %}
+    {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate" title="{{ SITENAME }}" type="application/rss+xml">
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" rel="alternate" title="{{ SITENAME }}" type="application/rss+xml">
+    {% endif %}
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-inner" style="height: 80px; display:flex; align-items:center;">
+    <div class="container">
+
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </a>
+
+        <a class="brand" href="/">{{ SITENAME }}</a>
+
+        <div class="nav-collapse">
+            <ul class="nav">
+            {% for title, link in MENUITEMS %}
+                <li><a href="{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+            {% for page in pages %}
+                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+            {% endif %}
+            </ul>
+        </div>
+
+<!--        <div class="nav-collapse">-->
+<!--        <form action="/">-->
+<!--            <div class="tipue_search_right">-->
+<!--                <input type="text" name="q" id="tipue_search_input" placeholder="Search" style="float:right;">-->
+<!--            </div>-->
+<!--        </form>-->
+<!--        <div id="tipue_search_content"></div>-->
+<!--        </div>-->
+
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+    <div class="row">
+
+        <div class="span8">
+        {% block content %} {% endblock %}
+        </div>
+
+        <div class="span4">
+
+            <!-- AD Goes here -->
+
+<!--            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">-->
+<!--            <ul class="nav nav-list">-->
+<!--                <li class="nav-header"></li>-->
+<!--                <li style="height:300px;"> </li>-->
+<!--            </ul>-->
+<!--            </div>-->
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Popular Tags</li>
+    <!--                {% for tag, articles in tags|sort_by_article_count %}-->
+    <!--                {% if loop.index <= 10 %}-->
+    <!--                    <li><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }} ({{articles|length}})</a></li>-->
+    <!--                {% endif %}-->
+    <!--                {% endfor %}-->
+                        {% for tag in POPULAR_TAGS %}
+                            <li><a href="{{ SITEURL }}/tag/{{ tag }}">{{ tag|capitalize }}</a></li>
+                        {% endfor %}
+                </ul>
+            </div>
+
+            {% if LINKS %}
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header">Featured Links 🔥🔥🔥</li>
+                {% for name, link in LINKS %}
+                    <li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
+            </ul>
+            </div>
+            {% endif %}
+
+            {% if SOCIAL %}
+            <div class="social">
+                <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Stay Connected!</li>
+                        {% for name, link in SOCIAL %}
+                            <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+
+<!--            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">-->
+<!--                <ul class="nav nav-list" style="height:440px;">-->
+<!--                    <li class="nav-header">Featured Book 🔥🔥🔥</li>-->
+<!--                    <li style="height:200px;">-->
+<!--                        <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850" target="_blank">-->
+<!--                            <img src="/images/extras/featured_book.png">-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+            {% if categories %}
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+                <ul class="nav nav-list">
+                    <li class="nav-header">SITE</li>
+                    <li><a href="{{ SITEURL }}/tags/">All Tags</a>
+                    <li><a href="{{ SITEURL }}/categories/">All Categories</a>
+                    {% if FEED_ALL_ATOM %}
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" rel="alternate">Atom feed</a></li>
+                    {% endif %}
+                    {% if FEED_ATOM %}
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate">Atom feed</a></li>
+                    {% endif %}
+                    {% if FEED_RSS %}
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
+                    {% endif %}
+                    {% if FEED_ALL_RSS %}
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" rel="alternate">RSS feed</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+
+<!--            <div class="well" style="padding: 8px 0; background-color:#FBFBFB; height:300px;">-->
+<!--                <ul class="nav nav-list">-->
+<!--                    <li class="nav-header"></li>-->
+<!--                    <li style="height:200px;"> </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+        </div> {# End span3 #} 
+    </div> {# End row #}
+    </div> {# End content #}
+
+<footer style="width:100%; background:#2E435E; color:white; position:absolute; left:0; text-align:center">
+<br />
+{% if articles %}
+   {% set copy_date = articles[0].date.strftime('%Y') %}
+{% else %}
+   {% set copy_date = '' %}
+{% endif %}
+<p>Copyright © 2021, {{ AUTHOR }}. All Rights Reserved.</p>
+<p>
+    <span><a href="/privacy-policy/">Privacy Policy</a> • <a href="/terms-and-conditions/">Terms of Service</a></span>
+</p>
+
+</footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{{ SITEURL }}/theme/bootstrap-collapse.js"></script>
+{% include "analytics.html" %}
+{% include "github.html" %} 
+</body>
+
+<script>
+        $(document).ready(function() {
+             $('#tipue_search_input').tipuesearch({
+                  'mode': 'json',
+                  'descriptiveWords': 75,
+                  'contentLocation': 'tipuesearch_content.json'
+             });
+        });
+</script>
+</html>

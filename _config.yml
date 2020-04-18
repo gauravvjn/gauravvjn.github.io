@@ -1,10 +1,10 @@
 # Site
-title: PyScoop
+title: Gaurav Jain
 description: Another Python Blog
 baseurl: ""
 url:
 
-canonical_base_url: https://www.pyscoop.com
+canonical_base_url: https://www.gauravvjn.com
 
 
 # Jekyll
@@ -21,10 +21,10 @@ static_dir: assets
 static_url: /assets
 
 paginate: 5
-paginate_path: 'page:num/'
+paginate_path: 'pages:num/'
 
 
-# Gems/plugins
+# Gems/pelican-plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -34,20 +34,20 @@ plugins:
 
 # Social
 social:
-  pyscoop:
+  gauravvjn:
     email:
-    facebook: https://www.facebook.com/pyscoop
+    facebook: https://www.facebook.com/gauravvjntech
     twitter:
     instagram:
-    linkedin:
+    linkedin: https://www.linkedin.com/in/gauravvjn
     github:
   author:
-    email:
-    facebook: https://www.facebook.com/gjain0
-    twitter:
-    instagram:
-    linkedin: https://www.linkedin.com/in/gjain0
-    github: http://github.com/gjain0
+    email: gauravjain91011@gmail.com
+    linkedin: https://www.linkedin.com/in/gauravvjn
+    github: http://github.com/gauravvjn
+    facebook: https://www.facebook.com/gauravvjn
+    twitter: https://twitter.com/gauravvjn
+    instagram: 
     sof:
 
 # DSA
@@ -85,10 +85,3 @@ dsa_taxonomy:
 # External
 google_analytics: UA-110940448-1
 
-firebase:
-  apiKey: 
-  authDomain: pyscoop-blog.firebaseapp.com
-  databaseURL: https://pyscoop-blog.firebaseio.com
-  projectId: pyscoop-blog
-  storageBucket: pyscoop-blog.appspot.com
-  messagingSenderId: 781699840052

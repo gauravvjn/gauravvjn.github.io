@@ -3,24 +3,38 @@
 
     {% include meta.html %}
     {% include analytics.html %}
-    <script data-ad-client="ca-pub-8760878622645967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    </script>
+    <!--<script data-ad-client="ca-pub-8760878622645967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">-->
+    <!--</script>-->
 
 
-    <link rel="icon" href="{{ site.static_url }}/img/favicon.ico">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="canonical" href="{{ site.canonical_base_url }}{{ page.url | replace:'index.html','' }}" />
+    <link rel="icon" href="{{ site.static_url }}/img/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
+    <link rel="canonical" href="{{ site.canonical_base_url }}{{ page.url | replace:'index.html','' }}"/>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.static_url }}/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.static_url }}/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.static_url }}/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.static_url }}/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    <span itemscope itemtype="https://schema.org/Blog">
-      <link itemprop="url" href="/">
-      <link itemprop="url" href="/">
-      <link itemprop="url" href="/about">
-    </span>
+    <!--<span itemscope itemtype="https://schema.org/Blog">-->
+      <!--<link itemprop="url" href="/python-jobs"/>-->
+      <!--<link itemprop="url" href="/about"/>-->
+      <!--<link itemprop="url" href="/contact"/>-->
+    <!--</span>-->
+
     <script src="{{ site.static_url }}/js/jquery-3.3.1.min.js"></script>
     <!-- <script src="{{ site.static_url }}/js/popper.min.js"></script> -->
     <script src="{{ site.static_url }}/js/bootstrap.min.js"></script>
+
+    <script type="application/ld+json">
+     {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Gaurav Jain",
+        "logo": "https://www.gauravvjn.com/assets/img/favicon.ico",
+        "description": "Another Python blog where you will explore Python and it's libraries, frameworks, tools, discussions, jobs and many more",
+        "url": "https://www.gauravvjn.com/",
+        "sameAs": [ "https://www.facebook.com/gauravvjntech",
+                    "https://www.linkedin.com/in/gauravvjn/"]
+    }
+</script>
 </head>

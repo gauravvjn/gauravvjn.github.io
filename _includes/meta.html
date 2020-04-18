@@ -1,14 +1,15 @@
 <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="google-site-verification" content="oGidCClITovaoyQ2a-HDEbdxtgSTxO4MyAkcdfecIIs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="google-site-verification" content="oGidCClITovaoyQ2a-HDEbdxtgSTxO4MyAkcdfecIIs"/>
     <meta name="keywords" content="{{page.keywords}}"/>
     <meta name="theme-color" content="#212529"/>
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="description" content="{{ page.excerpt| strip_html }}"/>
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}"/>
+    <meta property="og:image" content="{{ site.canonical_base_url }}{{ site.static_url}}{{ page.img }}"/>
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="twitter:title" content="{{ page.title }}"/>
     {% endif %}
-    <meta name="author" content="{{ site.title }}" />
+    <meta name="author" content="{{ site.title }}"/>
