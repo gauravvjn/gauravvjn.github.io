@@ -3,7 +3,7 @@
 
 AUTHOR = 'Gaurav Jain'
 SITENAME = 'GAURAV JAIN'
-SITEURL = ''
+SITEURL = 'https://www.gauravvjn.com'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -24,7 +24,7 @@ AUTHOR_FEED_RSS = None
 # TAG_FEED_RSS = 'tag/{slug}/feed/'
 # TAG_FEED_RSS_URL = 'tag/{slug}/feed/'
 
-DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags']
+DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', ]
 
 STATIC_PATHS = [
     'images',
@@ -35,7 +35,7 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'},
 }
 
-ARTICLE_PATHS = ['articles']
+ARTICLE_PATHS = ['articles', 'courses']
 ARTICLE_SAVE_AS = '{slug}.html'
 ARTICLE_URL = '{slug}/'
 
@@ -69,9 +69,6 @@ PAGINATION_PATTERNS = [
 # RELATIVE_URLS = True
 
 THEME = "pelican-themes/tuxlite_tbs"
-
-import logging
-LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
 
 # DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
@@ -107,8 +104,6 @@ POPULAR_TAGS = [
 ]
 DEBUG = False
 
-LOAD_CONTENT_CACHE = False
-
 # PLUGIN_PATHS = ['pelican-plugins']
 
 PLUGINS = ["sitemap"]
@@ -134,3 +129,12 @@ JINJA_FILTERS = {
     'sort_by_article_count': partial(sorted, key=lambda tags: len(tags[1]), reverse=True)
 }
 # DISQUS_SITENAME = ""
+
+import os
+import sys
+sys.path.append(os.curdir)
+
+try:
+    from local_pelicanconf import *
+except ImportError:
+    pass
