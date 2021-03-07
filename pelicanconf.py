@@ -3,7 +3,7 @@
 
 AUTHOR = 'Gaurav Jain'
 SITENAME = 'GAURAV JAIN'
-SITEURL = 'https://www.gauravvjn.com'
+SITEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
