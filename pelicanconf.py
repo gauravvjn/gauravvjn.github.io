@@ -3,7 +3,6 @@
 
 AUTHOR = 'Gaurav Jain'
 SITENAME = 'GAURAV JAIN'
-SITEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -55,11 +54,6 @@ TAG_SAVE_AS = 'tag/{slug}.html'
 TAGS_URL = 'tags/'
 TAGS_SAVE_AS = 'tags/index.html'
 
-DEFAULT_PAGINATION = 10
-# PAGINATION_PATTERNS = [
-#     (1, '{name}', '{name}/index.html'),
-#     (2, '{name}/page/{number}/', '{name}/page/{number}/index.html'),
-# ]
 PAGINATION_PATTERNS = [
     (1, '{url}', '{save_as}'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}.html'),
@@ -72,6 +66,7 @@ THEME = "pelican-themes/tuxlite_tbs"
 
 # DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
+
 MENUITEMS = [
     ('About Me', '/about-me/'),
     ('Contact Me', '/contact-me/'),
@@ -102,7 +97,6 @@ POPULAR_TAGS = [
     'security',
     'blockchain',
 ]
-DEBUG = False
 
 # PLUGIN_PATHS = ['pelican-plugins']
 
@@ -128,13 +122,18 @@ from functools import partial
 JINJA_FILTERS = {
     'sort_by_article_count': partial(sorted, key=lambda tags: len(tags[1]), reverse=True)
 }
-# DISQUS_SITENAME = ""
 
-import os
-import sys
-sys.path.append(os.curdir)
+from datetime import date
+CURRENT_YEAR = date.today().year
 
-try:
-    from local_pelicanconf import *
-except ImportError:
-    pass
+LOAD_CONTENT_CACHE = False
+
+import logging
+LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
+
+# --------------------------- END common settings ---------------------------------
+
+# Development conf
+SITEURL = 'http://127.0.0.1:8000'
+DEBUG = True
+DEFAULT_PAGINATION = 3

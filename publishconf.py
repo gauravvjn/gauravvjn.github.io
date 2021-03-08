@@ -16,5 +16,9 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+# DISQUS_SITENAME = ""
+# GOOGLE_ANALYTICS = ""
+
+SITEURL = 'https://www.gauravvjn.com'
+DEBUG = False
+DEFAULT_PAGINATION = 10

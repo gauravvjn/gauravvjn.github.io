@@ -1,9 +1,0 @@
-# development conf
-SITEURL = 'http://127.0.0.1:8000'
-LOAD_CONTENT_CACHE = False
-DEBUG = True
-
-import logging
-LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
-
-DEFAULT_PAGINATION = 3
