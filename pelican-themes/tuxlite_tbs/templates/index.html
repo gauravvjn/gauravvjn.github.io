@@ -6,21 +6,21 @@
 {% for article in articles_page.object_list %}        
 
 {# First item #}
-{% if false %}
+{% if article.category == 'course' %}
 
-    <div class='article'>
-        <div class="content-title">
-            <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>
-            {% include "metadata.html" %} 
-        </div>
-        
-        <div>{{ article.content }}</div>
-        <hr />
-    </div>
-		
-    {% if loop.length == 1 %}
-        {% include 'pagination.html' %}
-    {% endif %}
+<!--    <div class='article'>-->
+<!--        <div class="content-title">-->
+<!--            <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>-->
+<!--            {% include "metadata.html" %} -->
+<!--        </div>-->
+<!--        -->
+<!--        <div>{{ article.content }}</div>-->
+<!--        <hr />-->
+<!--    </div>-->
+<!--		-->
+<!--    {% if loop.length == 1 %}-->
+<!--        {% include 'pagination.html' %}-->
+<!--    {% endif %}-->
 
 {# other items #}
 {% else %} 

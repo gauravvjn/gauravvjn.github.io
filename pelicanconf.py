@@ -23,7 +23,7 @@ AUTHOR_FEED_RSS = None
 # TAG_FEED_RSS = 'tag/{slug}/feed/'
 # TAG_FEED_RSS_URL = 'tag/{slug}/feed/'
 
-DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', ]
+DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags']
 
 STATIC_PATHS = [
     'images',
@@ -34,7 +34,7 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'},
 }
 
-ARTICLE_PATHS = ['articles', 'courses']
+ARTICLE_PATHS = ['articles']
 ARTICLE_SAVE_AS = '{slug}.html'
 ARTICLE_URL = '{slug}/'
 
