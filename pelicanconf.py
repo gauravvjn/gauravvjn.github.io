@@ -68,8 +68,8 @@ THEME = "pelican-themes/tuxlite_tbs"
 DISPLAY_PAGES_ON_MENU = False
 
 MENUITEMS = [
-    ('About Me', '/about-me/'),
-    ('Contact Me', '/contact-me/'),
+    ('About', '/about-me/'),
+    ('Contact', '/contact-me/'),
     ('Python Jobs', '/python-jobs/'),
 ]
 
