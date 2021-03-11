@@ -3,9 +3,9 @@ title: Generate HMAC SHA256 signature in Python
 date: 2019-05-30
 category: Python
 tags: encoding, hash, hmac, security, sha256
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/sha256.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/sha256.png
 ---
 
 SHA256 encoded strings can be used to secure payment gateway.

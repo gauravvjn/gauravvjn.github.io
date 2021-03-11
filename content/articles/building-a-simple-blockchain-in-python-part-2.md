@@ -3,9 +3,9 @@ title: Building a Simple Blockchain in Python - Part 2
 date: 2019-07-01
 category: Python
 tags: bitcoin, blockchain, cryptocurrency, encoding, ethereum, hash, sha256, virtualcurrency
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/blockchain-2-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/blockchain-2-cover.png
 ---
 
 #### _Note: This is [the 2nd part of my previous post](/building-a-simple-blockchain-in-python/)._

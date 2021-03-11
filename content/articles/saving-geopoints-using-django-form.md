@@ -3,9 +3,9 @@ title: Saving GeoPoints Using Django Form
 date: 2020-05-26
 category: Django
 tags: django, djangoform, geopoint, gis
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/saving-geopoints-django-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/saving-geopoints-django-cover.png
 ---
 
 A while ago I was working on a project where I had a map which was part of a simple form. User can select a point on the map and submit. Form's responsibility was to get the submitted data, validate it and save into database if everything is fine. I was using MySQL with GIS support. During the development I faced a couple of issues that I'd be addressing here and how did I fix them. Let's begin!

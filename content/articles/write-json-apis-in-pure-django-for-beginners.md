@@ -3,9 +3,9 @@ title: Write JSON APIs In Pure Django For Beginners
 date: 2020-06-12
 category: Django
 tags: api, beginner, django
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/json-api-in-django-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/json-api-in-django-cover.png
 ---
 
 In this tutorial, we are going to build a few JSON based CRUD(Create, Read, Update, Delete) APIs in Django without using any additional library such as Django Rest Framework (DRF) or Tastypie.

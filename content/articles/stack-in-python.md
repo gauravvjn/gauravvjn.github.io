@@ -3,9 +3,9 @@ title: Stack Implementation in Python
 date: 2019-04-24
 category: Datastructure And Algorithm
 tags: algorithm, datastructure, stack
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/stack_in_python.jpg
+authors: Gaurav Jain
+summary: 
+coverimage: /images/stack_in_python.jpg
 ---
 
 A stack is a datastructure with two basic operations, those are `push` and `pop`.

@@ -3,9 +3,9 @@ title: Learn Python in 10 minutes
 date: 2019-01-13
 category: Python
 tags: beginner, class, datatype, dict, list, python, string
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/python.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/python.png
 ---
 
 ## Abstract

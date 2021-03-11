@@ -3,9 +3,9 @@ title: Sorting Algorithms implementation in Python
 date: 2019-02-05
 category: Datastructure And Algorithm
 tags: algorithm, bubble-sort, datastructure, heap-sort, insertion-sort, merge-sort, quicksort, selection-sort, sorting
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/sorting_algorithms.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/sorting_algorithms.png
 ---
 
 In this post we'll try to implement most popular sorting algorithms using Python. Some of them are -

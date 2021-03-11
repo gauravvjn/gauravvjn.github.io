@@ -3,9 +3,9 @@ title: Django JSONField attributes in admin filter
 date: 2020-06-25
 category: Django
 tags: django, djangoadmin
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/django-jsonfield-attribute-admin-filter-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/django-jsonfield-attribute-admin-filter-cover.png
 
 Django provides a JSONField which is useful to store JSON data and query on it. However, this is supported by PostgreSQL only. If you want to use JSONField with MySQL or MariaDB, you can use [django-mysql-json-field](https://django-mysql.readthedocs.io/en/latest/model_fields/json_field.html). But in this post, we'll be using inbuilt JSONField.
 

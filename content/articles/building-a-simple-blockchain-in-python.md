@@ -3,9 +3,9 @@ title: Building a Simple Blockchain in Python
 date: 2019-06-03
 category: Python
 tags: bitcoin, blockchain, cryptocurrency, ethereum, virtualcurrency
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/blockchain-1-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/blockchain-1-cover.png
 ---
 
 Since Bitcoin boom, Everybody is losing their mind, and as a result of that, we have another Cool Kid in the town, **BLOCKCHAIN**.

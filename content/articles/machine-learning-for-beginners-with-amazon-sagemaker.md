@@ -3,9 +3,9 @@ title: Machine Learning for beginners with Amazon SageMaker
 date: 2020-02-07
 category: Python
 tags: amazon-web-services, artificial-intelligence, aws, beginner, data-science, deep-learning, machine-learning, notebook, sagemaker
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/ml-sagemaker-1-cover.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/ml-sagemaker-1-cover.png
 ---
 
 ### Introduction

@@ -3,9 +3,9 @@ title: Security in the Django Application
 date: 2020-05-28
 category: Django
 tags: clickjacking-attack, crlf-injection, cross-site-request-forgery, cross-site-scripting, csrf, django, security, sql-injection, timing-attack, web-security, xss
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/security_in_django.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/security_in_django.png
 ---
 
 Security is the one the most common and critical aspect of an application yet we don't give due importance to this. In this post we'll go through most common web security vulnerabilities and practices and how can we prevent/mitigate them in a Django app elegantly.

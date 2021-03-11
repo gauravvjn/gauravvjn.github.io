@@ -3,9 +3,9 @@ title: Searching Algorithms implementation in Python
 date: 2019-03-01
 category: Datastructure And Algorithm
 tags: algorithm, binary-search, datastructure, linear-search, searching
-Authors: Gaurav Jain
-Summary: 
-coverImage: /images/searching_algorithm_in_python.png
+authors: Gaurav Jain
+summary: 
+coverimage: /images/searching_algorithm_in_python.png
 ---
 
 In this post we’ll try to implement most popular searching algorithms using Python. Some of them are –
