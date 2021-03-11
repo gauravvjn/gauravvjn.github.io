@@ -28,19 +28,23 @@
     <div class='article'>
         <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
         <div class= "well small"> {% include "metadata.html" %} </div>
-        <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.coverimage }}" style="max-width:60%"></a>
-        <span class="summary" style="float:right">
-            {{ article.summary }}
-            <div><a class="btn btn-info small" href="{{ SITEURL }}/{{ article.url }}" style="font-size:20px;height:25px;">
-                Continue reading >>
-            </a></div>
-            <br>
-            {% for tag in article.tags %}
-            <div><a href="/tag/{{tag}}">#{{tag}}</a></div>
-            {% endfor %}
-        </span>
-    </div>	
-				
+        <div style="display:flex;">
+            <div>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    <img src="{{ article.coverimage }}" style="max-width:60%">
+                </a>
+            </div>
+            <div class="summary" style="float:right">
+                {{ article.content[:150]|safe }}
+                <div>
+                    <a class="btn btn-info small" href="{{ SITEURL }}/{{ article.url }}" style="font-size:20px;height:25px;">
+                    Continue reading >>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %}
         {% include 'pagination.html' %}
     {% endif %}
