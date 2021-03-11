@@ -5,10 +5,10 @@ category: Python
 tags: amazon-web-services, artificial-intelligence, aws, beginner, data-science, deep-learning, machine-learning, notebook, sagemaker
 authors: Gaurav Jain
 summary: 
-coverimage: /images/ml-sagemaker-3-cover.jpg
+coverimage: /images/ml-sagemaker-3-cover.png
 ---
 
-#### _Note: This is [the 3rd part of “Machine Learning for beginners with Amazon SageMaker” series](/machine-learning-for-beginners-with-amazon-sagemaker/).
+#### _Note: This is [the 3rd part of “Machine Learning for beginners with Amazon SageMaker” series](/machine-learning-for-beginners-with-amazon-sagemaker/)._
 
 In the previous post, we learned how can we leverage the AWS SageMaker to train and test Machine Learning models. In this post, we’ll try to improve the XGBoost model that we created in the last post by tuning the Hyperparameters. For beginners, it can be quite difficult to play with Hyperparameters without fully understanding them. Again, Sagemaker comes with a handy utility that can tell us the best Hyperparameters configuration to obtain the best Model.
 

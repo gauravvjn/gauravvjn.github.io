@@ -5,7 +5,7 @@ category: Python
 tags: amazon-web-services, artificial-intelligence, aws, beginner, data-science, deep-learning, machine-learning, notebook, sagemaker
 authors: Gaurav Jain
 summary: 
-coverimage: /images/ml-sagemaker-2-cover.jpg
+coverimage: /images/ml-sagemaker-2-cover.png
 ---
 
 #### _Note: This is [the 2nd part of my previous post](/machine-learning-for-beginners-with-amazon-sagemaker/)._

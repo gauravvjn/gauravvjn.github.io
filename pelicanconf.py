@@ -119,8 +119,10 @@ SITEMAP = {
 
 from functools import partial
 
+
 JINJA_FILTERS = {
-    'sort_by_article_count': partial(sorted, key=lambda tags: len(tags[1]), reverse=True)
+    'sort_by_article_count': partial(sorted, key=lambda tags: len(tags[1]), reverse=True),
+    'get_first_n_words': lambda content, n: ' '.join(content.split()[:n]),
 }
 
 from datetime import date

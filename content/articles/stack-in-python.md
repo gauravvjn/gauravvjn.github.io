@@ -5,7 +5,7 @@ category: Datastructure And Algorithm
 tags: algorithm, datastructure, stack
 authors: Gaurav Jain
 summary: 
-coverimage: /images/stack_in_python.jpg
+coverimage: /images/stack_in_python.png
 ---
 
 A stack is a datastructure with two basic operations, those are `push` and `pop`.
