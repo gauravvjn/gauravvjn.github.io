@@ -49,7 +49,10 @@
              <span class="icon-bar"></span>
          </a>
 
-        <a class="brand" href="/">{{ SITENAME }}</a>
+        <a class="brand" href="/">
+            {{ SITENAME }}{% if SITESUBTITLE %}
+            <p>{{ SITESUBTITLE }}</p>{% endif %}
+        </a>
 
         <div class="nav-collapse">
             <ul class="nav">

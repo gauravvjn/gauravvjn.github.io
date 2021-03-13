@@ -3,6 +3,7 @@
 
 AUTHOR = 'Gaurav Jain'
 SITENAME = 'GAURAV JAIN'
+SITESUBTITLE = "All things about Python"
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -62,7 +63,7 @@ PAGINATION_PATTERNS = [
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-THEME = "pelican-themes/tuxlite_tbs"
+THEME = "pelican-themes/gj-theme"
 
 # DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
