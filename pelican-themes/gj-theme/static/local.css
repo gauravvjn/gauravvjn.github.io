@@ -33,7 +33,7 @@ h2 { font-size: 23px; }
 .table th, .table td { line-height: 1.3em; }
 
 /* Styling for articles */
-.article { padding-bottom:20px; padding-right: 40px; }
+.article { margin-bottom: 6% }
 .content-title { margin-bottom: 30px; }
 .article a:hover { text-decoration: none; } 
 

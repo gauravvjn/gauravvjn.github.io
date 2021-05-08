@@ -26,24 +26,16 @@
 {% else %} 
 
     <div class='article'>
-        <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
-        <div class= "well small"> {% include "metadata.html" %} </div>
-        <div style="display:flex;">
+        <div>
             <div>
                 <a href="{{ SITEURL }}/{{ article.url }}">
-                    <img src="{{ article.coverimage }}" style="max-height:260px; max-width:400px; height:auto; width:auto;">
+                    <img src="{{ article.coverimage }}" style="max-height:230px; max-width:400px; height:auto; width:auto;">
                 </a>
             </div>
-            <div class="summary" style="margin-left:10px;">
-<!--                <div>-->
-<!--                    {{ article.content | get_first_n_words(35) }}-->
-<!--                </div>-->
-                <div>
-                    <a class="btn btn-info small" href="{{ SITEURL }}/{{ article.url }}" style="font-size:20px;height:25px;">
-                    Continue reading >>
-                    </a>
-                </div>
+            <div style="word-wrap: break-word;">
+                <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
             </div>
+            <div> {% include "metadata.html" %} </div>
         </div>
     </div>
 

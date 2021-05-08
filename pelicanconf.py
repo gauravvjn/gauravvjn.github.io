@@ -63,7 +63,11 @@ PAGINATION_PATTERNS = [
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+# Theme1
 THEME = "pelican-themes/gj-theme"
+
+# Theme2
+# THEME = "pelican-themes/theme"
 
 # DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
@@ -139,4 +143,4 @@ LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
 # Development conf
 SITEURL = 'http://127.0.0.1:8000'
 DEBUG = True
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 5
