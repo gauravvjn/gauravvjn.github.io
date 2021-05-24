@@ -8,4 +8,6 @@
 .sass-cache
 _site
 .idea/
-TODO
+output/
+docs/
+local_pelicanconf.py
