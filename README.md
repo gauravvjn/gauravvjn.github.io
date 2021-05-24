@@ -6,15 +6,16 @@
 pip install -r requirements.txt
 ```
 
-Create .md files in content/ folder
+Create .md files in **content/** folder
 
 #### Generate Site
 From the project root directory, run the pelican make command to generate your site:
 
 ```sh
+# Use "make local" to generate site for local development
 make local
 
-# Use make publish to generate site for production
+# Use "make publish" to generate site for production
 make publish 
 ```
 
